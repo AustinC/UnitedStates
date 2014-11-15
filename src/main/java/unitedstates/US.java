@@ -64,4 +64,25 @@ public enum US {
         this.ANSIabbreviation = ANSIabbreviation;
         this.ISOabbreviation = ISOabbreviation;
     }
+
+    /**
+     * Parse string input to enum. Accepts unabbreviated and abbreviated forms.
+     * Case insensitive.
+     * @param input
+     * @return The parsed US state, or null on failure.
+     */
+    public static US parse(String input) {
+        if (null == input) {
+            return null;
+        }
+        input = input.trim();
+        for (US state : values()) {
+            if (state.unnabreviated.equalsIgnoreCase(input)    ||
+                state.ANSIabbreviation.equalsIgnoreCase(input) ||
+                state.ISOabbreviation.equalsIgnoreCase(input)) {
+                return state;
+            }
+        }
+        return null;
+    }
 }
