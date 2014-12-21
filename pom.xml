@@ -8,6 +8,28 @@
     <artifactId>unitedstates</artifactId>
     <version>1.0</version>
 
+    <name>UnitedStates</name>
+    <description>Java enums for the United States</description>
+    <url>https://github.com/AustinC/UnitedStates</url>
+
+    <licenses>
+      <license>
+        <name>Unlicense</name>
+        <url>http://unlicense.org/</url>
+      </license>
+    </licenses>
+
+    <developers>
+      <developer>
+        <name>Austin Chamberlin</name>
+        <email>austin.r.chamberlin@gmail.com</email>
+      </developer>
+    </developers>
+
+    <scm>
+      <url>https://github.com/AustinC/UnitedStates.git</url>
+    </scm>
+
     <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
