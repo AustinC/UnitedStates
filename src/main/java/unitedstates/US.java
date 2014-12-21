@@ -68,7 +68,7 @@ public enum US {
     /**
      * Parse string input to enum. Accepts unabbreviated and abbreviated forms.
      * Case insensitive.
-     * @param input
+     * @param input String to parse
      * @return The parsed US state, or null on failure.
      */
     public static US parse(String input) {
