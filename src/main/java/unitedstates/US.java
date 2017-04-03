@@ -64,6 +64,27 @@ public enum US {
         this.ANSIabbreviation = ANSIabbreviation;
         this.ISOabbreviation = ISOabbreviation;
     }
+    
+    /**
+     * The full, unabbreviated name of this state.
+     */
+    public String getUnabbreviated() {
+        return this.unabbreviated;
+    }
+    
+    /**
+     * The ANSI abbreviated name of this state, e.g. "NY", or "WY".
+     */
+    public String getANSIAbbreviation() {
+        return this.ANSIAbbreviation;
+    }
+    
+    /**
+     * The ISO abbreviated name of this state, e.g. "US-NY", or "US-WY".
+     */
+    public String getISOAbbreviation() {
+        return this.ISOAbbreviation;
+    }
 
     /**
      * Parse string input to enum. Accepts unabbreviated and abbreviated forms.
