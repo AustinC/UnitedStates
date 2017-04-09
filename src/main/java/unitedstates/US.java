@@ -55,12 +55,12 @@ public enum US {
     WYOMING("Wyoming","WY","US-WY"),
     PUERTO_RICO("Puerto Rico","PR","US-PR");
 
-    String unnabreviated;
+    String unabbreviated;
     String ANSIabbreviation;
     String ISOabbreviation;
 
-    US(String unnabreviated, String ANSIabbreviation, String ISOabbreviation) {
-        this.unnabreviated = unnabreviated;
+    US(String unabbreviated, String ANSIabbreviation, String ISOabbreviation) {
+        this.unabbreviated = unabbreviated;
         this.ANSIabbreviation = ANSIabbreviation;
         this.ISOabbreviation = ISOabbreviation;
     }
@@ -76,14 +76,14 @@ public enum US {
      * The ANSI abbreviated name of this state, e.g. "NY", or "WY".
      */
     public String getANSIAbbreviation() {
-        return this.ANSIAbbreviation;
+        return this.ANSIabbreviation;
     }
     
     /**
      * The ISO abbreviated name of this state, e.g. "US-NY", or "US-WY".
      */
     public String getISOAbbreviation() {
-        return this.ISOAbbreviation;
+        return this.ISOabbreviation;
     }
 
     /**
@@ -98,7 +98,7 @@ public enum US {
         }
         input = input.trim();
         for (US state : values()) {
-            if (state.unnabreviated.equalsIgnoreCase(input)    ||
+            if (state.unabbreviated.equalsIgnoreCase(input)    ||
                 state.ANSIabbreviation.equalsIgnoreCase(input) ||
                 state.ISOabbreviation.equalsIgnoreCase(input)) {
                 return state;
