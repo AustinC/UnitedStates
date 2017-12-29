@@ -10,5 +10,5 @@ This project is in the public domain, so feel free to just copy and paste. Alter
     <dependency>
       <groupId>in.hiaust</groupId>
       <artifactId>unitedstates</artifactId>
-      <version>1.0</version>
+      <version>1.1</version>
     </dependency>
